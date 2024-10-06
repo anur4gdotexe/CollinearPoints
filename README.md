@@ -1,8 +1,9 @@
-Assignment project, Algorithms, Part I, Princeton University
+## Assignment project, Algorithms, Part I, Princeton University
 
-The problem. Given a set of n distinct points in the plane, find every (maximal) line segment that connects a subset of 4 or more of the points.
+## The problem
+Given a set of n distinct points in the plane, find every (maximal) line segment that connects a subset of 4 or more of the points.
 
-Point data type. Create an immutable data type Point that represents a point in the plane.
+<b>Point data type.</b> Create an immutable data type Point that represents a point in the plane.
 
 To get started, use the data type Point.java, which implements the constructor and the draw(), drawTo(), and toString() methods. Your job is to add the following components.
 The compareTo() method should compare points by their y-coordinates, breaking ties by their x-coordinates. Formally, the invoking point (x0, y0) is less than the argument point (x1, y1) if and only if either y0 < y1 or if y0 = y1 and x0 < x1.
@@ -11,7 +12,7 @@ The slopeOrder() method should return a comparator that compares its two argumen
 Do not override the equals() or hashCode() methods.
 Corner cases. To avoid potential complications with integer overflow or floating-point precision, you may assume that the constructor arguments x and y are each between 0 and 32,767.
 
-Line segment data type. To represent line segments in the plane, use the data type LineSegment.java
+<b>Line segment data type.</b> To represent line segments in the plane, use the data type LineSegment.java
 
 Brute force. Write a program BruteCollinearPoints.java that examines 4 points at a time and checks whether they all lie on the same line segment, returning all such line segments. To check whether the 4 points p, q, r, and s are collinear, check whether the three slopes between p and q, between p and r, and between p and s are all equal.
 
